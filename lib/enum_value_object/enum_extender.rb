@@ -21,7 +21,7 @@ module EnumValueObject
             klass = Object.const_get(klass_name)
             klass.new
           rescue NameError
-            raise EnumValueObject::Error.new "You need to define #{klass} klass to use value object for enum"
+            raise EnumValueObject::Error.new "You need to define #{klass} class to use value object for enum"
           end
         end
       end
