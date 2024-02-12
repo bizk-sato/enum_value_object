@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 require "enum_value_object"
+require "rails/all"
+require "bundler/setup"
+
+Bundler.require(:default, :test)
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
